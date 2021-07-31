@@ -9,11 +9,10 @@ provider "aws" {
 module "domain" {
   source = "../../"
 
-  domain_name = "example.com.oram"
-  email_host = "FASTMAIL"
+  domain_name = "example.co" # Change this to a domain that you own.
+  email_host = "FASTMAIL" # Optional parameter. FASTMAIL is currently the only supported email host.
 
   tags = {
-    Tag1 = "tagvalue1",
-    Tag2 = "tagvalue2"
+    Automation = "Terraform"    
   }
 }
