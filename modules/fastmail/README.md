@@ -1,3 +1,7 @@
-# Domain Module
+# Fastmail Module
 
-This module provision an AWS Route53 Zone as well as DNS Records that will support Google or Fastmail email services.
+This module provisions DNS records in a zone to enable support for the [Fastmail](https://www.fastmail.com) email service
+
+## References
+
+[Fastmail DNS Records](https://www.fastmail.com/help/receive/domains-advanced.html#dnslist)

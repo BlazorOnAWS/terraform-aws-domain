@@ -1,3 +1,16 @@
-# Domain Module
+# Terraform AWS Domain from BlazorOnAWS
 
-This module provision an AWS Route53 Zone as well as DNS Records that will support Google or Fastmail email services.
+Terraform module to create a Route53 Zone and optionally create DNS records for enabling the Fastmail email service.
+
+## Usage
+
+module "domain" {
+  source = "github.com/BlazorOnAWS/terraform-aws-domain"
+
+  domain_name = "example.com"
+  email_host = "FASTMAIL"
+
+  tags = {
+    Automation = "Terraform"    
+  }
+}

@@ -4,7 +4,7 @@ variable "domain_name" {
 }
 
 variable "email_host" {
-  description = "Name of your email host. Must be NONE or FASTMAIL"
+  description = "Name of your email host. Should be NONE or FASTMAIL"
   default = "NONE"
   validation {
     condition     = contains(["NONE", "FASTMAIL"], var.email_host)
